@@ -1,7 +1,13 @@
-from tkinter import *
+from Tkinter import *
 
-#create GUI
+#GUI Code
 root = Tk()
-root.title("Ad Maker")
-root.geometry("500x500")
+root.title("Ad Maker") #GUI title
+root.geometry("250x250") #GUI size
+app = Frame(root)
+app.grid()
+button1 = Button(app, text = "Logo")
+button1.grid() #sets button for the logo function
+button2 = Button(app, text = "Frame")
+button2.grid() #sets button for the frame function
 root.mainloop()
